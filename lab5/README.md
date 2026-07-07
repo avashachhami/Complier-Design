@@ -1,11 +1,10 @@
-Lexical Analysis (Flex)
-The lexical analyzer scans the source input stream character by character, matching sequences against regular expressions to produce semantic tokens. For a conditional block, it isolates keywords (IF, ELSE), identifiers (ID), relational operators (RELOP), assignments (ASSIGN), and numeric literals (NUM).  
+#Theory 
 
-Syntax Analysis (Bison)
-The parser utilizes a Context-Free Grammar (CFG) to validate the stream of tokens produced by the lexer. It ensures that the structural arrangement conforms to language rules (e.g., matching parentheses around conditions, requiring semicolons after assignments). 
+Lexical Analysis (Flex) - The lexical analyzer scans the source input stream character by character, matching sequences against regular expressions to produce semantic tokens. For a conditional block, it isolates keywords (IF, ELSE), identifiers (ID), relational operators (RELOP), assignments (ASSIGN), and numeric literals (NUM).  
 
-Resolving the Dangling-Else Problem
-The dangling-else problem is a classic structural ambiguity where an else branch could logically bind to multiple open if statements. 
+Syntax Analysis (Bison) - The parser utilizes a Context-Free Grammar (CFG) to validate the stream of tokens produced by the lexer. It ensures that the structural arrangement conforms to language rules (e.g., matching parentheses around conditions, requiring semicolons after assignments). 
+
+Resolving the Dangling-Else Problem - The dangling-else problem is a classic structural ambiguity where an else branch could logically bind to multiple open if statements. 
 Consider:
 if (cond1) if (cond2) stmt1; else stmt2;
 
