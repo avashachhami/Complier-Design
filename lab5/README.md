@@ -1,10 +1,13 @@
-#Theory 
+## Theory
 
-Lexical Analysis (Flex) - The lexical analyzer scans the source input stream character by character, matching sequences against regular expressions to produce semantic tokens. For a conditional block, it isolates keywords (IF, ELSE), identifiers (ID), relational operators (RELOP), assignments (ASSIGN), and numeric literals (NUM).  
+An Arithmetic Expression Evaluator is a program that analyzes and computes mathematical expressions according to predefined grammar rules. Compiler construction tools such as Flex and Bison are commonly used to implement lexical analysis and syntax analysis phases.
 
-Syntax Analysis (Bison) - The parser utilizes a Context-Free Grammar (CFG) to validate the stream of tokens produced by the lexer. It ensures that the structural arrangement conforms to language rules (e.g., matching parentheses around conditions, requiring semicolons after assignments). 
+### Lexical Analysis (Flex)
+The lexical analyzer scans the source input stream character by character, matching sequences against regular expressions to produce semantic tokens. For a conditional block, it isolates keywords (`IF`, `ELSE`), identifiers (`ID`), relational operators (`RELOP`), assignments (`ASSIGN`), and numeric literals (`NUM`).
 
-Resolving the Dangling-Else Problem - The dangling-else problem is a classic structural ambiguity where an else branch could logically bind to multiple open if statements. 
+### Syntax Analysis (Bison)
+The parser utilizes a Context-Free Grammar (CFG) to validate the stream of tokens produced by the lexer. It ensures that the structural arrangement conforms to language rules (e.g., matching parentheses around conditions, requiring semicolons after assignments).
+
 Consider:
 if (cond1) if (cond2) stmt1; else stmt2;
 
