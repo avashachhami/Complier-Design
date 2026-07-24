@@ -14,7 +14,7 @@ For production $X \rightarrow t\alpha$, add terminal $t$ to $\text{FIRST}(X)$.
 
 For production $X \rightarrow e$, add $e$ to $\text{FIRST}(X)$.  
 
-For production $X \rightarrow Y\alpha$, add $\text{FIRST}(Y)$ (excluding $e$) to $\text{FIRST}(X)$. If $Y$ derives $e$, continue to subsequent symbols; if all derive $e$, add $e$ to $\text{FIRST}(X)$.  
+For production $X \rightarrow Y\alpha$, add $\text{FIRST}(Y)$ (excluding $e$) to $\text{FIRST}(X)$. If $Y$ derives $e$, continue to subsequent symbols; if all derive $e$, add $e$ to $\text{FIRST}(X)$  
 
 FOLLOW Set Computation
 
