@@ -1,4 +1,4 @@
-## theory
+## Theory
 
 The set of all terminal symbols that begin strings derived from $X$, including $\epsilon$ (denoted as 'e') if $X$ can derive the empty string.  $\text{FOLLOW}(A)$: The set of all terminal symbols that can appear immediately to the right of the non-terminal $A$ in some sentential form. The end-marker $ is assigned to the start symbol.  
 
